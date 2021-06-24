@@ -1,0 +1,121 @@
+/* logo */
+.logo{
+    width: 1130px;
+    /* height: 80px; */
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    /* background-color: blue; */
+}
+.logo a img{
+    background-color:#ff6700;
+    float: left;
+    margin-right: 20px;
+}
+.logo-span1{
+    font-size: 28px;
+    float: left;
+}
+.logo-span2{
+    font-size: 8px;
+    float: left;
+    margin-top: 35px;
+    margin-left: -110px;
+}
+/* 中间部分 */
+.beijin{
+    background-color: lightcyan;
+    width: 100%;
+    height: 556px;
+}
+.nav{
+    /* padding-top: 28px; */
+    width: 1130px;
+    /* background-color: red; */
+    margin: 0 auto;
+}
+.nav img{
+    width: 601.6px;
+    height: 556px;
+}
+.nav-div{
+    display: block;
+    width: 410px;
+    height: 528.4px;
+    background-color: #fff;
+    float: right;
+    margin-top: 30px;
+}
+.nav-div-dl{
+    /* background-color:#b4b; */
+    padding-top: 27px;
+    padding-bottom: 24px;
+    /* display: block; */
+    padding: 27px 0 24px;
+    text-align: center;
+}
+.nav-div-zh,
+.nav-div-sm{
+    font-size: 24px;
+}
+
+.nav-div-span{
+    width: 1px;
+    height: 24px;
+    margin: 0 35px 0 42px;
+    border: 1px solid #e0e0e0;
+    background: #e0e0e0;
+}
+.nav-inp1,
+.nav-inp2{
+    display: block;
+    line-height: 22px;
+    width: 306px;
+    padding: 13px 16px 13px 14px;
+    margin:0 auto ;
+    margin-bottom: 15px;
+}
+.nav-but .nav-but-inp{
+    background-color: #ff6700;
+    width: 345px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    margin-bottom: 14px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.nav-other-span{
+    margin: 0 auto;
+}
+.nav-other-span-a{
+    color: #ff6700;
+    /* margin: 0 auto; */
+    /* display: block; */
+    margin-left: 145px;
+    margin-bottom: 30px;
+}
+.nav-other-div{
+    margin-top: 30px;
+    text-align: center;
+}
+.nav-other-div-a1，
+.nav-other-div-a2{
+    font-size: 24px;
+}
+.nav-other-div-span{
+    width: 1px;
+    height: 24px;
+    margin: 0 35px 0 42px;
+    border: 1px solid #e0e0e0;
+    background: #e0e0e0;
+}
+.nav-other-div-a1:hover,
+.nav-other-div-a2:hover{
+    color: #ff6700;
+}

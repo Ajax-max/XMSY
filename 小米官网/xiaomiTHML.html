@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米官网</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <link rel="stylesheet" href="./xiaomiCSS.css">
+    <script type="text/javascript" src="xiaomiJS.js"></script>
+    <script type="text/javascript" src="tools.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 顶部导航条 -->
+    <!-- 顶部导航条外部容器 -->
+    <div class="topbar-wrapper">
+        <!-- 创建内部容器 -->
+        <div class="topbar w clearfix">
+            <!-- 左侧的导航 -->
+            <ul class="service">
+                <li><a href="javascript:;">小米商城</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">MIUI</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">loT</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">云服务</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">金融</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">有品</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">小爱开放平台</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">企业团购</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">资质证照</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">协议规则</a></li>
+                <li class="line">|</li>
+                <li class="app-wrapper">
+                    <a class="app" href="javascript:;">
+                        下载app
+                        <!-- 添加一个弹出层 -->
+                        <div class="qrcode">
+                            <img src="./img/download.png">
+                            <span>小米商城app</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">Select Location</a></li>
+            </ul>
+
+            <!-- 购物车 -->
+            <ul class="shop-cart">
+                <li><a href="javascript:;">
+                        <i class="fas fa-shopping-cart"></i>
+                        购物车（0）
+                    </a>
+                </li>
+                <div class="shop-div">
+
+                </div>
+            </ul>
+
+            <!-- 用户登录注册 -->
+            <ul class="user-info">
+                <li><a href="./xiaomiDL.html">登录</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">注册</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">消息通知</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <!-- 创建一个头部的外部容器 -->
+    <div class="header-wrapper">
+        <div class="header w clearfix">
+            <!-- 创建一个logo -->
+            <h1 class="logo" title="小米">
+                小米官网
+                <a class="home" href="/"></a>
+                <a class="mi" href="/"></a>
+            </h1>
+
+            <!-- 创建一个中间导航条的容器 -->
+            <div class="nav-wrapper">
+                <!-- 创建导航条  -->
+                <ul class="nav clearfix">
+                    <li class="all-goods-wrapper">
+                        <a class="all-goods" href="#">全部商品分类</a>
+
+                        <!-- 创建一个左侧导航菜单 -->
+                        <ul class="left-menu">
+                            <li>
+                                <a href="#">
+                                    手机 电话卡
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    电视 盒子
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    笔记本 平板
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    家电 插线板
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    出行 穿戴
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    智能 路由器
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    电源 配件
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    健康 儿童
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    耳机 音箱
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    生活 箱包
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="show-goods"><a href="#">小米手机</a></li>
+                    <li class="show-goods"><a href="#">Redmi 红米</a></li>
+                    <li class="show-goods"><a href="#">电视</a></li>
+                    <li class="show-goods"><a href="#">笔记本</a></li>
+                    <li class="show-goods"><a href="#">家电</a></li>
+                    <li class="show-goods"><a href="#">路由器</a></li>
+                    <li class="show-goods"><a href="#">智能硬件</a></li>
+                    <li><a href="#">服务</a></li>
+                    <li><a href="#">社区</a></li>
+
+                    <!-- 创建一个弹出层 -->
+                    <div class="goods-info">
+
+                    </div>
+                </ul>
+
+            </div>
+
+            <!-- 创建搜索框的容器 -->
+            <div class="search-wrapper">
+                <form class="search" action="#">
+                    <input class="search-inp" type="text" id="search-inp">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-div" id="search-div">
+                        <ul class="search-ul">
+                            <li><a href="#">小米11</a></li>
+                            <li><a href="#">笔记本</a></li>
+                            <li><a href="#">Note 9</a></li>
+                            <li><a href="#">小米10</a></li>
+                            <li><a href="#">耳机</a></li>
+                            <li><a href="#">全部商品</a></li>
+                            <li><a href="#">加湿器</a></li>
+                            <li><a href="#">洗衣机</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 创建banner的容器 -->
+    <div class="banner-wrapper">
+        <div class="banner w">
+            <ul class="img-list">
+                <li class="li-img">
+                    <a href="#">
+                        <img src="./img/banner1.jpg" alt="0" class="img">
+                    </a>
+                </li>
+
+                <li class="li-img">
+                    <a href="#">
+                        <img src="./img/banner2.jpg" alt="1" class="img">
+                    </a>
+                </li>
+
+                <li class="li-img">
+                    <a href="#">
+                        <img src="./img/banner3.jpg" alt="2" class="img">
+                    </a>
+                </li>
+                <li class="li-img">
+                    <a href="#">
+                        <img src="./img/banner4.jpg" alt="3" class="img">
+                    </a>
+                </li>
+                <li class="li-img">
+                    <a href="#">
+                        <img src="./img/banner5.jpg" alt="4" class="img">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="pointer">
+                <a class="active" href="javascript:;"></a>
+                <a class="active" href="javascript:;"></a>
+                <a class="active" href="javascript:;"></a>
+                <a class="active" href="javascript:;"></a>
+                <a class="active" href="javascript:;"></a>
+            </div>
+
+            <div class="prev-next">
+                <a class="prev" href="javascript:;" id="prev"></a>
+                <a class="next" href="javascript:;" id="next"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 固定定位的工具条 -->
+    <div class="back-top">
+        <!-- 手机APP -->
+        <a href="#" class="back-a1" id="back-a1">
+            <div class="back-div1">
+                <img src="../xmimg/手机 图标 橙色.png" alt="" class="back-img1">
+                <img src="../xmimg/手机图标 黑色.png" alt="" class="back-img2">
+                <p class="back-p1">手机APP</p>
+            </div>
+        </a>
+        <!-- 二维码 -->
+        <div class="back-div1-div" id="back-div1-div">
+            <img src="./img/download.png" alt="" class="back-div1-div-img">
+            <p class="back-div1-div-span">
+                扫码领取新人百元礼包
+            </p>
+            <div class="back-div1-div-div" id="back-div1-div-div"></div>
+        </div>
+        <!-- 个人中心 -->
+        <a href="#" class="back-a2">
+            <div class="back-div2">
+                <img src="../xmimg/人物图标橙色.png" alt="" class="back-div2-img1">
+                <img src="../xmimg/人物图标 黑色.png" alt="" class="back-div2-img2">
+                <p class="back-div2-p2">个人中心</p>
+            </div>
+        </a>
+        <!-- 售后服务 -->
+        <a href="#" class="back-a3">
+            <div class="back-div3">
+                <img src="../xmimg/工具图标橙色.png" alt="" class="back-div3-img1">
+                <img src="../xmimg/工具图标黑色.png" alt="" class="back-div3-img2">
+                <p class="back-div3-p3">售后服务</p>
+            </div>
+        </a>
+        <!-- 人工客服 -->
+        <a href="#" class="back-a4">
+            <div class="back-div4">
+                <img src="../xmimg/耳机图标橙色.png" alt="" class="back-div4-img1">
+                <img src="../xmimg/耳机图标黑色.png" alt="" class="back-div4-img2">
+                <p class="back-div4-p4">人工客服</p>
+            </div>
+        </a>
+        <!-- 购物车 -->
+        <a href="#" class="back-a5">
+            <div class="back-div5">
+                <img src="../xmimg/购物车橙色.png" alt="" class="back-div5-img1">
+                <img src="../xmimg/购物车黑色.png" alt="" class="back-div5-img2">
+                <p class="back-div5-p5">
+                    购物车
+                </p>
+            </div>
+        </a>
+    </div>
+
+    <!-- 创建广告容器 -->
+    <div class="ad w">
+        <ul class="shortcut">
+            <li>
+                <a href="#">
+                    <i class="fas fa-clock"></i>
+                    小米秒杀
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-building"></i>
+                    企业团购
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fas fa-frog"></i>
+                    F码通道
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-robot"></i>
+
+                    米粉卡
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-keyboard"></i>
+
+                    以旧换新
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-sim-card"></i>
+
+                    话费充值
+                </a>
+            </li>
+        </ul>
+
+        <ul class="imgs">
+            <li>
+                <a href="#"><img src="./img/1.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="./img/2.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="./img/3.jpg" alt=""></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 创建手机商品 -->
+    <div class="sj w">
+        <div class="sj-img w">
+            <img src="../xmimg/note 9.webp" alt="" class="w">
+        </div>
+        <div class="sj-sp w">
+            <div class="sj-wz ">
+                <h3>手机</h3>
+                <div class="sj-div ">
+                    <a href="#" class="">全部商品</a>
+                </div>
+            </div>
+        </div>
+        <div class="sj-zs w ">
+            <a href="#"><img src="../xmimg/小米11.webp" alt="" class="sj-zs-img"></a>
+            <div class="xmsj">
+                <ul class="xmsj-ul">
+                    <li class="xmsj-ul-li">
+                        <a href="#">
+                            <img src="../xmimg/小米11手机.webp" alt="" class="xmsj-img1">
+                            <h3 class="xmsj-h">小米11</h3>
+                            <p class="xmsj-p1">晓龙888 | 2K四曲面屏</p>
+                            <p class="xmsj-p2">3999元起</p>
+                        </a>
+                    </li>
+                    <li class="xmsj-ul-li">
+                        <a href="#">
+                            <img src="../xmimg/note 9 pro.webp" alt="" class="xmsj-img1">
+                            <h3 class="xmsj-h">Note 9 Pro</h3>
+                            <p class="xmsj-p1">一亿像素夜景相机120Hz六档变速高刷屏</p>
+                            <p class="xmsj-p2">3999元起</p>
+                        </a>
+                    </li>
+                    <li class="xmsj-ul-li">
+                        <a href="#">
+                            <img src="../xmimg/note 9 手机.webp" alt="" class="xmsj-img1">
+                            <h3 class="xmsj-h">Note 9 Pro</h3>
+                            <p class="xmsj-p1">天玑 800U处理器，5000mAh电池，</p>
+                            <p class="xmsj-p2">1599元起</p>
+                        </a>
+                    </li>
+                    <li class="xmsj-ul-li">
+                        <a href="#">
+                            <img src="../xmimg/note 9 4g.webp" alt="" class="xmsj-img1">
+                            <h3 class="xmsj-h">Note 9 Pro</h3>
+                            <p class="xmsj-p1">6000mAh长续航</p>
+                            <p class="xmsj-p2">1299元起</p>
+                        </a>
+                    </li>
+                    <li class="xmsj-ul-li">
+                        <a href="#">
+                            <img src="../xmimg/小米10 至尊版.webp" alt="" class="xmsj-img1">
+                            <h3 class="xmsj-h">Note 9 Pro</h3>
+                            <p class="xmsj-p1">120X 变焦/120W秒充/120Hz屏幕</p>
+                            <p class="xmsj-p2">5299元起</p>
+                        </a>
+                    </li>
+                    <li class="xmsj-ul-li">
+                        <a href="#">
+                            <img src="../xmimg/k30s 至尊纪念版.webp" alt="" class="xmsj-img1">
+                            <h3 class="xmsj-h">Redmi K30S 至尊纪念版</h3>
+                            <p class="xmsj-p1">144Hz[7档]变速高刷屏</p>
+                            <p class="xmsj-p2">5299元起</p>
+                        </a>
+                    </li>
+                    <li class="xmsj-ul-li">
+                        <a href="#">
+                            <img src="../xmimg/k30s 至尊纪念版.webp" alt="" class="xmsj-img1">
+                            <h3 class="xmsj-h">Redmi K30 至尊版</h3>
+                            <p class="xmsj-p1">120Hz弹出全面屏，天玑1000+旗舰处理器</p>
+                            <p class="xmsj-p2">1999元起</p>
+                        </a>
+                    </li>
+                    <li class="xmsj-ul-li">
+                        <a href="#">
+                            <img src="../xmimg/黑鲨.webp" alt="" class="xmsj-img1">
+                            <h3 class="xmsj-h">Redmi K30 至尊版</h3>
+                            <p class="xmsj-p1">骁龙865处理器，120Hz刷新率</p>
+                            <p class="xmsj-p2">3999元起</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

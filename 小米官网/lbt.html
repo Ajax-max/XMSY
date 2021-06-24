@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        .box {
+            position: relative;
+            margin-left: 300px;
+            margin-top: 100px;
+        }
+
+        .div-img {
+            position: absolute;
+            opacity: 0;
+            left: 0;
+            top: 0;
+            transition: all 1.5s;
+        }
+
+        .div-img:first-child {
+            opacity: 1;
+        }
+
+        .left,
+        .right {
+            position: absolute;
+        }
+
+        .left {
+            width: 60px;
+            top: 200px;
+        }
+
+        .right {
+            width: 60px;
+            left: 940px;
+            top: 200px;
+        }
+
+        .box-ul>ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        .box-ul li {
+            width: 14px;
+            height: 14px;
+            border-radius: 100%;
+            background-color: #fff;
+            float: left;
+            margin-left: 14px;
+        }
+
+        .box-ul {
+            position: absolute;
+            bottom: -425px;
+            left: 800px;
+        }
+
+        .box-ul li:hover {
+            background-color: red;
+        }
+        .box-ul li:first-child{
+            background-color: red;
+        }
+    </style>
+    <script>
+        $(function () {
+            // 图片索引
+            var index = 0;
+            dingshiqi();
+            var timer;
+            function dingshiqi() {
+                timer = setInterval(function () {
+                    index++;
+                    if (index == $('.div-img').length-1) {
+                        index = 0;
+                        $('.div-img').css('opacity', '0');
+                        $('.div-img').eq(index).css('opacity', '1');
+                        $('.li').css('background-color', '#fff');
+                        $('.li').eq(index).css('background-color', 'red');
+                    } else {
+                        $('.div-img').css('opacity', '0');
+                        $('.div-img').eq(index).css('opacity', '1');
+                        $('.li').css('background-color', '#fff');
+                        $('.li').eq(index).css('background-color', 'red');
+                    }
+                }, 5000);
+            }
+            $('.left').click(function () {
+                clearInterval(timer);
+                if (index == 0) {
+                    index = $('.div-img').length - 1;
+                    $('.div-img').css('opacity', '0');
+                    $('.div-img').eq(index).css('opacity', '1');
+                    $('.li').css('background-color', '#fff');
+                    $('.li').eq(index).css('background-color', 'red');
+                    dingshiqi();
+                }
+                else {
+                    index--;
+                    $('.div-img').css('opacity', '0');
+                    $('.div-img').eq(index).css('opacity', '1');
+                    $('.li').css('background-color', '#fff');
+                    $('.li').eq(index).css('background-color', 'red');
+                }
+            })
+            $('.right').click(function () {
+                clearInterval(timer);
+                if (index == $('.div-img').length - 1) {
+                    index = 0;
+                    $('.div-img').css('opacity', '0');
+                    $('.div-img').eq(index).css('opacity', '1');
+                    $('.li').css('background-color', '#fff');
+                    $('.li').eq(index).css('background-color', 'red');
+                }
+                else {
+                    index++;
+                    $('.div-img').css('opacity', '0');
+                    $('.div-img').eq(index).css('opacity', '1');
+                    $('.li').css('background-color', '#fff');
+                    $('.li').eq(index).css('background-color', 'red');
+                    dingshiqi();
+                }
+            })
+            $('.li').click(function () {
+                clearInterval(timer);
+                var indexx = $(this).index();
+                index = indexx;
+                $('.div-img').css('opacity', '0');
+                $('.div-img').eq(index).css('opacity', '1');
+                $('.li').css('background-color', '#fff');
+                $('.li').eq(index).css('background-color', 'red');
+                dingshiqi();
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="div-img"><a href=""><img src="./img/banner1.jpg" alt="" width="1000" height="460"></a></div>
+        <div class="div-img"><a href=""><img src="./img/banner2.jpg" alt="" width="1000" height="460"></a></div>
+        <div class="div-img"><a href=""><img src="./img/banner3.jpg" alt="" width="1000" height="460"></a></div>
+        <div class="div-img"><a href=""><img src="./img/banner4.jpg" alt="" width="1000" height="460"></a></div>
+        <div class="div-img"><a href=""><img src="./img/banner5.jpg" alt="" width="1000" height="460"></a></div>
+        <div><button class="left">上一张</button></div>
+        <div><button class="right">下一张</button></div>
+        <div class="box-ul">
+            <ul>
+                <li class="li"></li>
+                <li class="li"></li>
+                <li class="li"></li>
+                <li class="li"></li>
+                <li class="li"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
